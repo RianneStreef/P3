@@ -6,6 +6,10 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed "
   },
+  "repository": {
+    "type": "git",
+    "url": "'https://github.com/RianneStreef/P3.git/'"
+  },
   "author": "",
   "license": "ISC"
 }
