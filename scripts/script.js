@@ -14,4 +14,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.display="none";
   document.getElementById("openNav").style.display="inline-block";
+
 }
+
+// WHY IS THIS ONLY WORKING ONE TIME?
