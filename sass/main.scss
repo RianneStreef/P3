@@ -19,6 +19,34 @@ body {
   height: 100vh;
 }
 
+h1 {
+  margin-bottom: 30px;
+}
+
+.button-link {
+  border-radius: 50px;
+  margin: 40px 0 0 20px;
+  padding: 8px 20px;
+  transition: background-color 100ms ease-in;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
+  text-transform: uppercase;
+  border: 1px solid $highlight-color;
+  background-color: $highlight-color;
+  color: white;
+
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: white;
+    transition: background-color 600ms ease-in;
+    transition: color 100ms ease-in;
+  }
+}
+
 //HEADER
 
 .header {
@@ -41,6 +69,7 @@ body {
     height: 50px;
     margin: 10px;
     position: fixed;
+    z-index: 1;
   }
 }
 
@@ -61,6 +90,7 @@ body {
   font-size: 15px;
   color: #ffffff;
   pointer-events: none;
+  z-index: 1;
 }
 
 .nav {
@@ -68,10 +98,11 @@ body {
   flex-direction: column;
   text-align: right;
   background-color: gray;
+
   &__link {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
   }
   &:visited {
     color: white;
@@ -81,12 +112,12 @@ body {
   }
 }
 
-.nav-hidden {
+.nav-hidden-mobile {
   display: none;
+  pointer-events: none;
 }
 
 //FOOTER
-
 
 .footer {
   width: 100%;
@@ -121,10 +152,109 @@ ul {
   padding-left: 0;
 }
 
+.defaultMain {
+  margin: 50px;
+}
+
+//INDEX
+.indexMain {
+  background-image: url("../media/headerBackground2.jpeg");
+  background-repeat: no-repeat;
+  background-position-y: 100px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(50%);
+}
+
+//MYWORK
+
+.card {
+  background-color: hsla(0, 0%, 100%, 0.842);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
+}
+
+.card-fx:hover {
+  transform: scale(1.05);
+  transition: transform 600ms ease-in-out;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.proj-prev {
+  display: inline-block;
+  margin: 30px;
+  &__img {
+    display: flex;
+    max-width: 200px;
+    -webkit-box-shadow: inset 0px 0px 75px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 0px 75px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 0px 75px 0px rgba(255, 255, 255, 1);
+  }
+  &__fx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.proj-prev__heading-container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proj-prev__footer-container {
+  margin: 10px;
+}
+
+//CONTACT
+
+.form {
+  width: 90%;
+  padding: 50px;
+  border-radius: 50px;
+  &__label {
+    padding: 0 20px;
+  }
+  &__input {
+    margin: 20px;
+    padding: 5px;
+    display: block;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
+  }
+}
 
 //RESPONSIVE
 
 @media only screen and (min-width: 768px) {
+  .header {
+    height: 55px;
+  }
+
+  .header i {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .nav {
     display: flex;
     overflow: hidden;
@@ -135,34 +265,48 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
     text-transform: uppercase;
-    background-color: none;
+    background-color: transparent;
+    &__link {
+      display: inline;
+      margin: 10px 5px; 
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: color 250ms linear;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 50px;
+
+        &:hover {
+          background-color: $highlight-color;
+          padding: 10px;
+          border-radius: 50px;
+          border: 2px solid $highlight-color;
+          transition: background-color 400ms ease-in;
+          transition: border 200ms ease-in;
+        }
+      }
+    }
   }
 
-  .nav__link {
-    display: inline;
-    margin: 25px 30px 0 0;
-  }
-
-  .nav__link a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 250ms linear;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-
-  .nav__link a:hover {
-    background-color: $highlight-color;
-    padding: 10px;
-    border-radius: 50px;
-    border: 2px solid $highlight-color;
-    transition: background-color 400ms ease-in;
-    transition: border 200ms ease-in;
-  }
-
-  .header i {
+  .nav-hidden-desktop {
     display: none;
+    pointer-events: none;
   }
 
+  .work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+
+  .button-link {
+    background-color: white;
+    border: 1px solid black;
+    &:hover {
+      border: 1px solid $highlight-color;
+      background-color: $highlight-color;
+    }
+  }
 }

@@ -7,7 +7,7 @@ const header = document.getElementById('header-fx');
 setTimeout(() => header.classList.add('header-fx'), 100)
 
 function openNav() {
-  document.getElementById("myNav").classList.remove("nav-hidden");
+  document.getElementById("myNav").classList.remove("nav-hidden-mobile");
   document.getElementById("openNav").style.display="none";
 }
 
