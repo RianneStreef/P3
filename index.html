@@ -1,9 +1,31 @@
-<link rel="stylesheet" href="./css/style.css" type="text/css" />
-<link rel="icon" href="./media/favicon.png" />
-<script src="https://kit.fontawesome.com/6468bc3c55.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
-
-
-<main class="indexMain">
-      
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Portfolio - Rianne Streef" />
+  <title>Rianne Streef</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  <link rel="icon" href="./media/favicon.png" />
+  <script src="https://kit.fontawesome.com/6468bc3c55.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header" id="header-fx">
+    <a href="index.html">
+      <img class="header__img" src="./media/logoWhiteTranspartentNoText.png"/></a>
+      <h3 class="title">WEB DEVELOPER</h3>
+  <div id="myNav" class="nav nav-hidden-mobile">
+    <a href="javascript:void(0)" class="closebtn nav__link nav-hidden-desktop" onclick="closeNav()">X</a>
+    <a class="nav__link" href="mywork.html">My Work</a>
+    <a class="nav__link" href="aboutme.html">About Me</a>
+    <a class="nav__link" href="contact.html">Contact</a>
+  </div>
+  <i class="fas fa-bars" onclick="openNav()" id="openNav"></i>  
+</header>
+  
+</div>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
