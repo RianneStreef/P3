@@ -151,6 +151,7 @@ ul {
 
 .defaultMain {
   margin: 50px;
+  flex-grow: 1;
 }
 
 //INDEX
@@ -166,9 +167,7 @@ ul {
   background-repeat: no-repeat;
 }
 
-.indexMain {
-  flex-grow: 1;
-}
+
 //MYWORK
 
 .work-container {

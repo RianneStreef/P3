@@ -139,6 +139,7 @@ ul {
 
 .defaultMain {
   margin: 50px;
+  flex-grow: 1;
 }
 
 .indexHeader {
@@ -151,10 +152,6 @@ ul {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.indexMain {
-  flex-grow: 1;
 }
 
 .work-container {
