@@ -141,6 +141,22 @@ ul {
   margin: 50px;
 }
 
+.indexHeader {
+  background-image: none;
+}
+
+.indexBackground {
+  background-image: url("../media/headerBackground2.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.indexMain {
+  flex-grow: 1;
+}
+
 .work-container {
   display: flex;
   flex-direction: column;
