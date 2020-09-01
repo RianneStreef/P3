@@ -18,10 +18,6 @@ h1 {
   margin-bottom: 30px;
 }
 
-p {
-  width: 100% !important;
-}
-
 .button-link {
   text-align: center;
   border-radius: 50px;
@@ -40,10 +36,6 @@ p {
 }
 .button-link:hover {
   color: white;
-}
-
-.button-container {
-  width: 100% !important;
 }
 
 .header {
@@ -355,6 +347,10 @@ ul {
 
   .header i {
     display: none;
+  }
+
+  .nav__link {
+    font-size: 16px;
   }
 
   .title {
