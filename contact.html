@@ -34,7 +34,7 @@
           to you as soon as possible. 
       </p>
       <div class="card form-card">
-      <form class="form">
+      <form class="form" onsubmit="myFunction()">
           <div id="form-container">
               <div class="form__group">
                   <label class="form__label" for="name">Name:</label>
@@ -51,12 +51,10 @@
               <div class="form-group">
                   <label class="form__label" for="message">Message:</label>
                   <textarea id="message" type="text" class="form__input" rows="5" required></textarea>
-                  
+                  <div class="button-container">
+                    <button type="button" id="submit-button" class="button-link" >Send</button>
+                  </div>
               </div>
-          </div>
-          <div class="button-container">
-              <button type="button" id="submit-button" class="button-link ">Send</button>
-            </div>
           </div>
       </form>
   </section>
