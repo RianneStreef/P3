@@ -1,9 +1,9 @@
 console.log("test")
 
 
-const header = document.getElementById('header-fx');
+const hero = document.getElementById('hero-fx');
 
-setTimeout(() => header.classList.add('header-fx'), 100)
+setTimeout(() => hero.classList.add('hero-fx'), 100)
 
 
 function openNav() {
@@ -26,8 +26,11 @@ var title = document.getElementById('myTitle')
 
 var sticky = title.offsetTop
 
+const HEADER_HEIGHT = 60;
+const HERO_HEIGHT = 300;
+
 function changeTitleClass() {
-  if (window.pageYOffset > '5') {
+  if (window.pageYOffset > HERO_HEIGHT - HEADER_HEIGHT) {
     title.classList.add('title-background')
   } else {
     title.classList.remove('title-background')
