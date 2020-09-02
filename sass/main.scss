@@ -98,6 +98,7 @@ p {
   top: 0;
   right: 0;
   background-color: gray;
+  z-index: 999;
   &__link {
     text-decoration: none;
     color: #ffffff;
@@ -208,15 +209,17 @@ ul {
 }
 
 .card {
-  max-width: 200px;
   margin: 20px;
   background-color: hsla(0, 0%, 100%, 0.842);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
 }
 
-.card-fx:hover {
+.card-fx {
+  max-width: 200px;
+  &:hover {
   transform: scale(1.05);
   transition: transform 600ms ease-in-out;
+}
 }
 
 .project-card {
@@ -344,14 +347,15 @@ ul {
     }
   }
 
+  .button-container {
+    width: 70%
+  }
+
   .form-card {
-    max-width: 70%;
+    width: 70%;
   }
 
-  .card {
-    max-width: 200px;
-  }
-
+  
   .work-container {
     display: flex;
     flex-direction: row;
@@ -392,6 +396,10 @@ ul {
 
   .form-card {
     max-width: 50%;
+  }
+
+  .button-container {
+    width: 50%
   }
 
 }

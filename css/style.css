@@ -89,6 +89,7 @@ p {
   top: 0;
   right: 0;
   background-color: gray;
+  z-index: 999;
 }
 .nav__link {
   text-decoration: none;
@@ -194,12 +195,14 @@ ul {
 }
 
 .card {
-  max-width: 200px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.842);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card-fx {
+  max-width: 200px;
+}
 .card-fx:hover {
   transform: scale(1.05);
   transition: transform 600ms ease-in-out;
@@ -326,12 +329,12 @@ ul {
     transition: background-color 600ms ease-in-out;
   }
 
-  .form-card {
-    max-width: 70%;
+  .button-container {
+    width: 70%;
   }
 
-  .card {
-    max-width: 200px;
+  .form-card {
+    width: 70%;
   }
 
   .work-container {
@@ -371,6 +374,10 @@ ul {
 
   .form-card {
     max-width: 50%;
+  }
+
+  .button-container {
+    width: 50%;
   }
 }
 
