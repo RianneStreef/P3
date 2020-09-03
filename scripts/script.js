@@ -1,9 +1,11 @@
 console.log("test")
 
 
-const hero = document.getElementById('hero-fx');
+const hero = document.getElementById('heroFX');
 
 setTimeout(() => hero.classList.add('hero-fx'), 100)
+
+
 
 
 function openNav() {

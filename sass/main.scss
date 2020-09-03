@@ -66,6 +66,10 @@ p {
   }
 }
 
+.logo {
+  z-index: 999;
+}
+
 .header i {
   margin: 15px;
   font-size: 30px;
@@ -125,7 +129,7 @@ min-height: 300px;
 height: 60px;
 width: 100%;
 top: 0;
-left: 0;
+right: 0;
 background-image: url("../media/headerBackground2.jpeg");
 background-size: cover;
 background-attachment: fixed;
@@ -270,6 +274,14 @@ ul {
   justify-content: space-around;
 }
 
+.button-container-cv {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
 //CONTACT
 
 .form {
@@ -347,7 +359,7 @@ ul {
     }
   }
 
-  .button-container {
+  .button-container-cv {
     width: 70%
   }
 
@@ -398,7 +410,7 @@ ul {
     max-width: 50%;
   }
 
-  .button-container {
+  .button-container-cv {
     width: 50%
   }
 
