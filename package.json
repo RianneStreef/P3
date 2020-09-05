@@ -11,5 +11,8 @@
     "url": "'https://github.com/RianneStreef/P3.git/'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0"
+  }
 }
