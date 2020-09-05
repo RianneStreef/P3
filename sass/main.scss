@@ -12,7 +12,7 @@ $highlight-color: #ad1457;
 // GENERAL
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -23,9 +23,8 @@ h1 {
 }
 
 p {
-  line-height: 23px;;
+  line-height: 23px;
 }
-
 
 .button-link {
   text-align: center;
@@ -46,7 +45,6 @@ p {
     color: white;
   }
 }
-
 
 //HEADER
 
@@ -74,7 +72,6 @@ p {
   margin: 15px;
   font-size: 30px;
 }
-
 
 .title {
   position: fixed;
@@ -125,17 +122,17 @@ p {
 }
 
 .hero {
-min-height: 300px;
-height: 60px;
-width: 100%;
-top: 0;
-right: 0;
-background-image: url("../media/headerBackground2.jpeg");
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-filter: blur(5px) grayscale(100%);
+  min-height: 300px;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-image: url('../media/headerBackground2.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px) grayscale(100%);
 }
 
 .hero-fx {
@@ -194,7 +191,7 @@ ul {
 }
 
 .indexBackground {
-  background-image: url("../media/headerBackground2.jpeg");
+  background-image: url('../media/headerBackground2.jpeg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -220,19 +217,20 @@ ul {
 
 .card-fx {
   max-width: 200px;
+  min-width: 300px;
+
   &:hover {
-  transform: scale(1.05);
-  transition: transform 600ms ease-in-out;
-}
+    transform: scale(1.05);
+    transition: transform 600ms ease-in-out;
+  }
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
-  padding: 30px;
+  height: 100%;
+  width: 100%;
   flex-grow: 1;
-
 }
 
 .proj-prev {
@@ -244,19 +242,24 @@ ul {
     -moz-box-shadow: inset 0px 0px 75px 0px rgba(255, 255, 255, 1);
     box-shadow: inset 0px 0px 75px 0px rgba(255, 255, 255, 1);
   }
-  .proj-prev__heading-container {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
+  &__heading-container {
+    height: 100%;
+    // margin: 10px;
+    padding: 10px 20px;
+    h2 {
+      margin-top: 0;
+    }
   }
 }
 .proj-prev__img-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 35px;
-  margin: 20px 10px;
+  margin: 20px 10px 10px 10px;
+  i {
+    margin: 0 5px;
+  }
 }
 
 .proj-prev__byline {
@@ -266,7 +269,8 @@ ul {
 
 .proj-prev__footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -278,9 +282,6 @@ ul {
   display: flex;
   justify-content: space-around;
 }
-
-
-
 
 //CONTACT
 
@@ -360,18 +361,17 @@ ul {
   }
 
   .button-container-cv {
-    width: 70%
+    width: 70%;
   }
 
   .form-card {
     width: 70%;
   }
 
-  
   .work-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 30px;
   }
@@ -379,7 +379,6 @@ ul {
   p {
     width: 70%;
   }
-
 
   .footer {
     display: flex;
@@ -411,7 +410,6 @@ ul {
   }
 
   .button-container-cv {
-    width: 50%
+    width: 50%;
   }
-
 }

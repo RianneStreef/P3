@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -206,6 +206,7 @@ ul {
 
 .card-fx {
   max-width: 200px;
+  min-width: 300px;
 }
 .card-fx:hover {
   transform: scale(1.05);
@@ -215,8 +216,8 @@ ul {
 .project-card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
-  padding: 30px;
+  height: 100%;
+  width: 100%;
   flex-grow: 1;
 }
 
@@ -230,19 +231,23 @@ ul {
   -moz-box-shadow: inset 0px 0px 75px 0px white;
   box-shadow: inset 0px 0px 75px 0px white;
 }
-.proj-prev .proj-prev__heading-container {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
+.proj-prev__heading-container {
+  height: 100%;
+  padding: 10px 20px;
+}
+.proj-prev__heading-container h2 {
+  margin-top: 0;
 }
 
 .proj-prev__img-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 35px;
-  margin: 20px 10px;
+  margin: 20px 10px 10px 10px;
+}
+.proj-prev__img-container i {
+  margin: 0 5px;
 }
 
 .proj-prev__byline {
@@ -252,7 +257,8 @@ ul {
 
 .proj-prev__footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -349,7 +355,7 @@ ul {
   .work-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 30px;
   }
