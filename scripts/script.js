@@ -1,12 +1,3 @@
-console.log("test")
-
-
-const hero = document.getElementById('heroFX');
-
-setTimeout(() => hero.classList.add('hero-fx'), 100)
-
-
-
 
 function openNav() {
   document.getElementById("myNav").classList.remove("nav-hidden-mobile");
