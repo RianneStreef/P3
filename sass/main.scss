@@ -6,6 +6,7 @@ $highlight-color: #ad1457;
 
 .wrapper {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
@@ -54,6 +55,7 @@ p {
 
 .header {
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
@@ -64,7 +66,7 @@ p {
   color: white;
   &__img {
     height: 50px;
-    margin: 10px;
+    margin: 5px;
   }
 }
 
@@ -84,7 +86,7 @@ p {
   height: 60px;
   top: 0;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 20px;
   margin-top: 0;
   font-size: 15px;
   color: #ffffff;
@@ -209,6 +211,7 @@ ul {
 
 .work-container {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -224,7 +227,7 @@ ul {
 .card-fx {
     max-width: 200px;
     min-width: 200px;
-    min-height: 300px;
+    min-height: 250px;
     padding: 15px;
   &:hover {
     transform: scale(1.05);
@@ -234,16 +237,17 @@ ul {
 
 .project-card {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  flex-grow: 1;
 }
 
 .proj-prev {
   display: inline-block;
   &__img-container {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: center;
     font-size: 35px;
@@ -255,23 +259,23 @@ ul {
   &__heading-container {
     height: 100%;
     width: 100%;
+    flex-grow: 1;
+
     h2 {
       margin-top: 0;
     }
   }
   &__footer-container {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
   }
 }
 
-// .button-container {
-//   display: flex;
-//   justify-content: space-around;
-// }
 
 .button-container-cv {
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
 }
 
@@ -294,6 +298,7 @@ ul {
 
 .button-container {
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
 }
 
@@ -302,6 +307,7 @@ ul {
 @media only screen and (min-width: 820px) {
   .nav {
     display: flex;
+    display: -webkit-flex;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -362,6 +368,7 @@ ul {
 
   .work-container {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -374,6 +381,7 @@ ul {
 
   .footer {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
