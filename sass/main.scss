@@ -41,13 +41,13 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
   border: 1px solid $highlight-color;
   background-color: $highlight-color;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   &:visited {
-    color: white;
+    color: #ffffff;
   }
   &:hover {
-    color: white;
+    color:#ffffff;;
   }
 }
 
@@ -63,7 +63,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: #ffffff;
   &__img {
     height: 50px;
     margin: 5px;
@@ -94,7 +94,7 @@ p {
 }
 
 .title-background {
-  background-color: black;
+  background-color: #000000;
   transition: background-color 500ms ease-in-out;
 }
 
@@ -105,14 +105,14 @@ p {
   text-align: right;
   top: 0;
   right: 0;
-  background-color: gray;
+  background-color: #808080;
   z-index: 999;
   &__link {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 15px;
     &:visited {
-      color: white;
+      color: #ffffff;
     }
     &:hover {
       color: $highlight-color;
@@ -220,7 +220,7 @@ ul {
 
 .card {
   margin: 15px;
-  background-color: hsla(0, 0%, 100%, 0.842);
+  background-color: #ffffffd7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); // margin: 0 20px;
 }
 
@@ -323,7 +323,7 @@ ul {
       text-decoration: none;
       color: #ffffff;
       transition: color 250ms linear;
-      border: 2px solid white;
+      border: 2px solid #ffffff;
       border-radius: 50px;
       font-size: 13px;
       &:hover {
@@ -333,7 +333,7 @@ ul {
         border: 2px solid $highlight-color;
         transition: background-color 400ms ease-in;
         transition: border 200ms ease-in;
-        color: white;
+        color: #ffffff;
       }
     }
   }
@@ -348,16 +348,16 @@ ul {
   }
 
   .button-link {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     border: 1px solid black;
     &:visited {
-      color: black;
+      color: #000000;
     }
     &:hover {
       border: 1px solid $highlight-color;
       background-color: $highlight-color;
-      color: white;
+      color: #ffffff;
       transition: background-color 600ms ease-in-out;
     }
   }
