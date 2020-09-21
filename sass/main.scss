@@ -324,13 +324,13 @@ ul {
       border: 2px solid #ffffff;
       border-radius: 50px;
       font-size: 13px;
+      transition: background-color 800ms ease-in, border 800ms ease-in;; 
       &:hover {
         background-color: $highlight-color;
         padding: 10px;
         border-radius: 50px;
         border: 2px solid $highlight-color;
-        transition: background-color 400ms ease-in;
-        transition: border 200ms ease-in;
+        transition: background-color 400ms ease-in, border 400ms ease-in;; 
         color: #ffffff;
       }
     }
