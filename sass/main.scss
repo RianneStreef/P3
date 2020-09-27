@@ -10,6 +10,7 @@ $highlight-color: #ad1457;
   display: flex;
   flex-direction: column;
   height: auto;
+  min-height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -230,6 +231,7 @@ ul {
   max-width: 200px;
   min-width: 200px;
   padding: 10px;
+  transition: transform 600ms ease-in-out;
   &:hover {
     transform: scale(1.05);
     transition: transform 600ms ease-in-out;
