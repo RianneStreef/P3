@@ -50,6 +50,7 @@ p {
   }
   &:hover {
     color: #ffffff;
+    transition: background-color 600ms ease-in-out;
   }
 }
 
@@ -94,7 +95,6 @@ p {
   color: #ffffff;
   pointer-events: none;
   transition: background-color 500ms ease-in-out;
-
 }
 
 .title-background {
@@ -164,6 +164,7 @@ p {
   &__link {
     text-decoration: none;
     color: #ffffff;
+    transition: color 600ms ease-in;
     &:hover {
       color: $highlight-color;
       transition: color 600ms ease-in;
